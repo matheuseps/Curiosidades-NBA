@@ -1,36 +1,41 @@
-<!DOCTYPE html>
+>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz - 03</title>
+    <title>quiz - 04</title>
     <link rel="stylesheet" href="quiz.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html">Voltar para página principal</a>
+        <a href="index.html">voltar para a pagina principal</a>
     </header>
 
     <main>
-        <div id="question">
-            <h1>Pergunta 04</h1>
+        <div class="question content">
+            <h1>Pergunta 4</h1>
+            <p>Qual é o time com a melhor campanha da NBA ?</p>
             <form action="">
-                <input type="radio" name="" id="">
-                <label>Pergunta</label>
+                <input type="radio" name="alternativa" id="alternativa1">
+                <label>Boston Celtics 72/73</label>
                 <br>
-                <input type="radio" name="" id="">
-                <label>Pergunta</label>
+                <input type="radio" name="alternativa" id="alternativa2">
+                <label>Philadelphia 76ers 66/67 </label>
                 <br>
-                <input type="radio" name="" id="">
-                <label>Pergunta</label>
+                <input type="radio" name="alternativa" id="alternativa3">
+                <label>Chicago Bulls 96/97</label>
                 <br>
-                <input type="radio" name="" id="">
-                <label>Pergunta</label>
+                <input type="radio" name="alternativa" id="alternativa4">
+                <label>Golden State Warriors 15/16</label>
                 <br>
                 <button>Responder</button>
             </form>
-            <a href="quiz05.html"><button>Próxima pergunta></button></a>
+        </div>
+
+        <div id="proximaPergunta">
+            <button id="finalizar">Finalizar</button>
         </div>
     </main>
 </body>

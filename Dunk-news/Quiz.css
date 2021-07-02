@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to left ,  #2D20BD 80%, #21178A 20%);
+    background-color: #027BA1;
     
 }
 
@@ -19,6 +19,7 @@ a{
 
 button{
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 img{
@@ -31,4 +32,40 @@ img{
 
 p{
     font-size: 20px;
+}
+
+button{
+    width: auto;
+    height: 40px;
+    font-weight: 600;
+    margin-top: 0.9rem;
+    margin-left: .5rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    background-color: #029692;
+}
+
+button:hover{
+    filter: brightness(1.2);
+}
+
+/* MAIN */
+.content{
+    margin: auto;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: white;
+    width: min(80%, 700px);
+    height: 270px;
+    border-radius: 12px;
+    box-shadow:3px 3px 5px rgb(13, 13, 14); 
+}
+
+#question label{
+    font-size: 19px;
+    font-family: monospace;
+    font-weight: bold;
 }
