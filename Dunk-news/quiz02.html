@@ -4,38 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quiz - 02</title>/title>
+    <title>quiz - 02</title>
     <link rel="stylesheet" href="quiz.css">
-    <script src="scripts.js"></script>
+    <script src="quiz.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"> < Voltar para página principal</a>
+        <a href="index.html">  Voltar para página principal</a>
     </header>
 
     <main>
         <div class="question content">
-            <h1>Pergunta 2</h1>
-            <p>Qual é o maior pontuador da NBA?</p>
-            <form action="">
-                <input type="radio" name="alternativa" id="alternativa1">
-                <label>Michael Jordan</label>
+            <div id="res">
+                <h1>Pergunta 2</h1>
+                <p>Qual é o maior pontuador da NBA?</p>
+                <select name="alternativas" id="alternativas">
+                    <option value="Michael Jordan">Michael Jordan</option>
+                    <option value="Abdul-Jabbar">Abdul-Jabbar</option>
+                    <option value="Larry Bird">Larry Bird</option>
+                    <option value="LeBron James">LeBron James</option>
+                </select>
                 <br>
-                <input type="radio" name="alternativa" id="alternativa2">
-                <label>Abdul Jabbar</label>
-                <br>
-                <input type="radio" name="alternativa" id="alternativa3">
-                <label>LeBron James</label>
-                <br>
-                <input type="radio" name="alternativa" id="alternativa4">
-                <label>Kobe Bryant</label>
-                <br>
-                <button>Responder</button>
-            </form>
+                <button onclick="responder()">Responder</button>
+            </div>
         </div>
 
         <div>
-            <a href="quiz03.html"><button>Pular pergunta</button></a>
+            <a href="quiz03.html"><button>Próxima pergunta</button></a>
         </div>
     </main>
 </body>

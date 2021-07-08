@@ -6,37 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz - 03</title>
     <link rel="stylesheet" href="quiz.css">
-    <script src="scripts.js"></script>
+    <script src="quiz.js"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"> < Voltar para página principal</a>
+        <a href="index.html">  Voltar para página principal</a>
     </header>
 
     <main>
         <div class="question content">
-            <h1>Pergunta 3</h1>
-            <p>Qual é o jogador com mais anéis da NBA ?</p>
-            <form action="">
-                <input type="radio" name="alternativa" id="alternativa1">
-                <label>Larry Bird</label>
+            <div id="res">
+                <h1>Pergunta 3</h1>
+                <p>Qual é o jogador com mais anéis da NBA ?</p>
+                <select name="alternativas" id="alternativas">
+                    <option value="Larry Bird">Larry Bird </option>
+                    <option value="Michael Jordan">Michael Jordan</option>
+                    <option value="Bill Russell">Bill Russell</option>
+                    <option value="Magic Johnson">Magic Johnson</option>
+                </select>
                 <br>
-                <input type="radio" name="alternativa" id="alternativa2">
-                <label>Michael Jordan</label>
-                <br>
-                <input type="radio" name="alternativa" id="alternativa3">
-                <label>Magic Johnson</label>
-                <br>
-                <input type="radio" name="alternativa" id="alternativa4">
-                <label>Bill Russell</label>
-                <br>
-                <button>Responder</button>
-            </form>
-            
+                <button onclick="responder()">Responder</button>
+            </div>
         </div>
 
         <div>
-            <a href="quiz04.html"><button>Pular pergunta</button></a>
+            <a href="quiz04.html"><button>Próxima pergunta</button></a>
         </div>
     </main>
 </body>

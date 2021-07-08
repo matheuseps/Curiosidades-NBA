@@ -6,38 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quiz - 01</title>
     <link rel="stylesheet" href="quiz.css">
-    <script src="scripts.js"></script>
+    <script src="quiz.js"></script>
 </head>
 <body>
     <header>
-     <a href="index.html"><p>voltar para pagina principal</p></a>
+        <a href="index.html"> <span><</span> Voltar para página principal</a>
     </header>
 
     <main>
         <div class="question content">
-            <h1>Pergunta 1</h1>
-                <div class="res">
-                    <p style="text-align: center;">Boston Celtics e Los Angeles Lakers são os maiors vencedores da NBA. Quantos títulos eles tem?</p>
-                        <input type="radio" name="alternativa" id="alternativa" value="false">
-                        <label>16</label>
+            <div id="res">
+                <h1>Pergunta 1</h1>
+                        <p style="text-align: center;">Boston Celtics e Los Angeles Lakers são os maiors vencedores da NBA. Quantos títulos eles tem?</p>
+                        <select name="alternativas" id="alternativas">
+                            <option value="20">20</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="10">10</option>
+                        </select>
                         <br>
-                        <input type="radio" name="alternativa" id="alternativa" value="false">
-                        <label>10</label>
-                        <br>
-                        <input type="radio" name="alternativa" id="alternativa" value="true">
-                        <label>17</label>
-                        <br>
-                        <input type="radio" name="alternativa" id="alternativa" value="false">
-                        <label>20</label>
-                        <br>
-                        <button onclick="responder()" id="buttonResponder">Responder</button>
-                    </form>
-                </div>
+                        <button onclick="responder()">Responder</button>
+            </div>
         </div>
     </main>
 
     <div id="proximaPergunta">
-        <a href="quiz02.html"><button> Pular pergunta</button></a>
+        <a href="quiz02.html"><button id="buttonPular"> Próxima pergunta</button></a>
     </div>
 </body>
 </html>

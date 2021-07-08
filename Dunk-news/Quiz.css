@@ -23,11 +23,12 @@ button{
 }
 
 img{
-    width: 120px;
+    max-width: 100px;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
+    min-width: 50px;
 }
 
 p{
@@ -68,4 +69,20 @@ button:hover{
     font-size: 19px;
     font-family: monospace;
     font-weight: bold;
+}
+
+.quiz button{
+    width: 100px;
+    height: 40px;
+    margin-top: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    background-color: #029692;
+}
+
+.quiz button:hover{
+    filter: brightness(1.2);
 }
