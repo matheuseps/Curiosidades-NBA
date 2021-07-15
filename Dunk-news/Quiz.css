@@ -23,11 +23,12 @@ button{
 }
 
 img{
-    width: 120px;
+    max-width: 100px;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: center;
+    min-width: 50px;
 }
 
 p{
@@ -40,11 +41,11 @@ button{
     font-weight: 600;
     margin-top: 0.9rem;
     margin-left: .5rem;
-    font-family:  'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.233);
+    border: 1px solid rgba(0, 0, 0, 0.63);
     background-color: #029692;
 }
 
@@ -56,11 +57,10 @@ button:hover{
 .content{
     margin: auto;
     margin-top: 1rem;
-    padding: 20px;
     text-align: center;
     background-color: white;
     width: min(80%, 700px);
-    height: auto;
+    height: 270px;
     border-radius: 12px;
     box-shadow:3px 3px 5px rgb(13, 13, 14); 
 }
@@ -71,20 +71,24 @@ button:hover{
     font-weight: bold;
 }
 
-.alternativa{
-    width: 200px;
+
+button{
+    width: auto;
     height: 40px;
-    font-weight: 600;
-    margin-top: 0.9rem;
-    margin-left: .5rem;
-    font-family:  'Poppins', sans-serif;
-    font-size: 20px;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
     border-radius: 8px;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.63);
-    background-color: #029692;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    background-color: var(--azul-claro-);
 }
 
+button:hover{
+    filter: brightness(1.2);
+}
 select{
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
